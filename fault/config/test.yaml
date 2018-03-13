@@ -1,0 +1,2 @@
+database:
+  host: root:xiaomi@tcp(localhost:3306)/gotest

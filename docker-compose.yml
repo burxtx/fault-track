@@ -1,0 +1,12 @@
+version: "2"
+services:
+  todo:
+    build:
+      context: .
+      dockerfile: todo/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/github.com/burxtx/fault
+    container_name: todo
+    ports:
+    - 8800:8081
